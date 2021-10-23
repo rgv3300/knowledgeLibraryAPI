@@ -1,0 +1,23 @@
+{
+    "name": "knowledgelibraryapi",
+    "version": "1.0.0",
+    "description": "",
+    "main": "createCategory.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rgv3300/knowledgeLibraryAPI.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/rgv3300/knowledgeLibraryAPI/issues"
+    },
+    "homepage": "https://github.com/rgv3300/knowledgeLibraryAPI#readme",
+    "dependencies": {
+        "axios": "0.23.0",
+        "dotenv": "10.0.0"
+    }
+}
