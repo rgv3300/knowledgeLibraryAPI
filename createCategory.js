@@ -1,11 +1,9 @@
 require('dotenv').config()
 
 const axios = require('axios').default,
-    fs = require('fs'),
     ACCESS_TOKEN = process.env.ACCESS_TOKEN
 
-
-//text content to be displayed in the category
+//text content and files to be uploaded in the category
 const payload1 = [
         {
             "type": "text_block",
@@ -22,6 +20,8 @@ const payload1 = [
             ]
         }
     ]
+
+
 //icon and color must be selected from the provided constants by Graph API
 
 const postCategory = async(title,icon,color,content) => {
