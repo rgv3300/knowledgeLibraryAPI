@@ -58,12 +58,12 @@ const postSubCategory = async(categoryId,title,content) => {
     
 }
 
-postCategory('Test Category1','airplane','cyan',payload1)
+postCategory('Legal','airplane','cyan',payload1)
     .then((value) => {
         const id = parseInt(value.data.id)
         console.log(id)
-        postSubCategory(id, 'Test Subcategory1', payload1)
-        postSubCategory(id,'Test Subcategory11',payload1)
+        postSubCategory(id, 'Contracts', payload1)
+        postSubCategory(id,'Court Orders',payload1)
     })
     .catch((error) => {
         if(error.response) {
@@ -73,12 +73,12 @@ postCategory('Test Category1','airplane','cyan',payload1)
         }
     })
 
-postCategory('Test Category2','badge','red',payload1)
+postCategory('Marketing','badge','red',payload1)
     .then((value) => {
         const id = parseInt(value.data.id)
         console.log(id)
-        postSubCategory(id, 'Test Subcategory2', payload1)
-        postSubCategory(id,'Test Subcategory22',payload1)
+        postSubCategory(id, 'SEO', payload1)
+        postSubCategory(id,'Target Advertisement',payload1)
     })
     .catch((error) => {
         if(error.response) {
